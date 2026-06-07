@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Pembayaran - Jaberkel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-content">
+    <h1 class="logo">Jaberkel</h1>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="pembayaran.html">Pembayaran</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container" style="padding:40px 0;">
+
+  <div class="hero-card">
+
+    <h2>Edit Pembayaran</h2>
+
+    <form id="editForm">
+
+      <input
+        type="text"
+        id="nama"
+        placeholder="Nama"
+        required
+      >
+
+      <input
+        type="text"
+        id="kelas"
+        placeholder="Kelas"
+        required
+      >
+
+      <input
+        type="date"
+        id="tanggal"
+        required
+      >
+
+      <input
+        type="number"
+        id="nominal"
+        placeholder="Nominal"
+        required
+      >
+
+      <label>Ganti Bukti Transfer (Opsional)</label>
+
+      <input
+        type="file"
+        id="bukti"
+        accept="image/*"
+      >
+
+      <button
+        type="submit"
+        class="btn btn-primary">
+        Simpan Perubahan
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<script src="js/edit.js"></script>
+
+</body>
+</html>

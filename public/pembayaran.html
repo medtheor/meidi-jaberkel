@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jaberkel - Pembayaran</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-content">
+    <h1 class="logo">Jaberkel</h1>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container" style="padding:40px 0;">
+
+  <div class="hero-card">
+
+    <h2>Form Pembayaran</h2>
+
+    <form id="paymentForm">
+
+      <input
+        type="text"
+        name="nama"
+        placeholder="Nama Siswa"
+        required
+      >
+
+      <input
+        type="text"
+        name="kelas"
+        placeholder="Kelas"
+        required
+      >
+
+      <input
+        type="date"
+        name="tanggal"
+        required
+      >
+
+      <input
+        type="number"
+        name="nominal"
+        placeholder="Nominal Pembayaran"
+        required
+      >
+
+      <input
+        type="file"
+        name="bukti"
+        accept="image/*"
+        required
+      >
+
+      <button
+        type="submit"
+        class="btn btn-primary">
+        Simpan Pembayaran
+      </button>
+
+    </form>
+  </div>
+
+  <br>
+
+  <div class="hero-card">
+
+    <h2>Riwayat Pembayaran</h2>
+
+    <table id="paymentTable">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Tanggal</th>
+          <th>Nominal</th>
+          <th>Status</th>
+          <th>Bukti</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+
+    </table>
+
+  </div>
+
+</section>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
