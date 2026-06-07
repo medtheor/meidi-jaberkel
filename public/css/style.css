@@ -368,3 +368,47 @@ td button {
     text-align: center;
   }
 }
+
+/* RESPONSIVE PEMBAYARAN PAGE */
+@media (max-width: 768px) {
+  section.container {
+    width: 94%;
+    padding: 24px 0 !important;
+  }
+
+  .hero-card {
+    padding: 18px;
+    border-radius: 14px;
+    overflow-x: hidden;
+  }
+
+  .hero-card h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  input,
+  button,
+  .btn {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  td button {
+    margin-top: 6px;
+    width: auto;
+  }
+}
